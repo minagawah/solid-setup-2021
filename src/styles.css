@@ -1,0 +1,48 @@
+body {
+  font-family: -apple-system, Helvetica, 'Segoe UI', 'YuGothic',
+    'Yu Gothic Medium', Meiryo, 'MS PGothic', sans-serif;
+  background-color: #292929;
+  color: #dadada;
+}
+
+body,
+button,
+input {
+  line-height: 1.46;
+  font-size: 1rem;
+}
+
+p {
+  margin-block-start: 0.2em; /* originally --> margin-block-start: 1em*/
+  margin-block-end: 0.2em; /* originally --> margin-block-end: 1em */
+}
+
+h1 {
+  font-size: 1.8em; /* originally --> 2em */
+  margin-block-start: 0.3em; /* originally --> 0.67em */
+  margin-block-end: 0.3em; /* originally --> 0.67em */
+}
+
+h2 {
+  font-size: 1.35em; /* originally --> 1.5em */
+  margin-block-start: 0.3em; /* originally --> 0.83em */
+  margin-block-end: 0.15em; /* originally --> 0.83em */
+}
+
+h4 {
+  margin-block-start: 0em; /* originally --> 1.33em */
+  margin-block-end: 0em; /* originally --> 1.33em */
+}
+
+a,
+a:link,
+a:visited {
+  color: #e0f71e;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #ff0099;
+  text-decoration: underline;
+}
