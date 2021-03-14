@@ -10,17 +10,6 @@ import {
   inputStyle,
 } from '@/constants/styles';
 
-const wrapperStyle = css(
-  tw`mt-2 flex flex-row flex-nowrap justify-start content-center items-center`
-);
-
-const secretStyle = css`
-  ${tw`text-center font-bold`}
-  ${padding}
-  background-color: ${yellow};
-  color: ${darkgray};
-`;
-
 export const Settings = () => {
   const [store, actions] = useStore();
 
@@ -41,8 +30,19 @@ export const Settings = () => {
 
       <p>Set or reset the secret code in Local Storage.</p>
 
-      <div className={wrapperStyle}>
-        <div className={secretStyle}>
+      <div
+        className={css(
+          tw`mt-2 flex flex-row flex-nowrap justify-start content-center items-center`
+        )}
+      >
+        <div
+          className={css`
+            ${tw`text-center font-bold`}
+            ${padding}
+            background-color: ${yellow};
+            color: ${darkgray};
+          `}
+        >
           <Show when={store.secret} fallback="(no secret)">
             {store.secret}
           </Show>
