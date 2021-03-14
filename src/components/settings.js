@@ -10,6 +10,10 @@ import {
   inputStyle,
 } from '@/constants/styles';
 
+const wrapperStyle = css(
+  tw`mt-2 flex flex-row flex-nowrap justify-start content-center items-center`
+);
+
 export const Settings = () => {
   const [store, actions] = useStore();
 
@@ -30,11 +34,7 @@ export const Settings = () => {
 
       <p>Set or reset the secret code in Local Storage.</p>
 
-      <div
-        className={css(
-          tw`mt-2 flex flex-row flex-nowrap justify-start content-center items-center`
-        )}
-      >
+      <div className={wrapperStyle}>
         <div
           className={css`
             ${tw`text-center font-bold`}
